@@ -8,7 +8,6 @@
     font-family: 'Roboto', sans-serif;
     list-style: none;
 }
-
 #wrapperIndex {
     display: grid;
     grid-template-areas: "header header header"
@@ -18,7 +17,6 @@
     grid-template-columns: 1fr;
     width: 100%;
     background-color: #121212;
-    
 }
 .headerIndex {
     grid-area: header;
@@ -77,7 +75,6 @@
 .hamb-line::after{
     top: -5px;
 }
-
 .side-menu {
     display: none;
 } /* Hide checkbox */
@@ -203,7 +200,7 @@
     flex-wrap: wrap;
     width: 100%;
     height: 100px;
-    margin:auto
+    margin:auto;
     img {
         width: 100px;
         margin: 10px;
@@ -220,27 +217,23 @@
     color: #ffffff;
     height: 650px;
     text-align: center;
-    
+    div {
+        margin: 20px 10px;
+    }
+    i {
+        margin: 0 7px; 
+    }
+    h4 {
+        font-family: 'Staatliches', cursive;
+        font-size: 14px;
+    }
+    p{
+        font-size: 12px;
+    }
+    iframe{
+        border-radius: 10px;
+    }
 }
-.footer__content div {
-    margin: 20px 10px;
-    
-}
-.footer__content i {
-    margin: 0 7px;
-    
-}
-.footer__content h4 {
-    font-family: 'Staatliches', cursive;
-    font-size: 14px;
-}
-.footer__content p{
-    font-size: 12px;
-}
-.footer__content iframe{
-    border-radius: 10px;
-}
-
 /* pagina de servicios destacados */
 .wrapperServices {
     display: grid;
@@ -253,7 +246,6 @@
     width: 100%;
     background-color: #121212;
 }
-
 .headerServices {
     grid-area: header;
 }
@@ -284,25 +276,31 @@
     margin: 50px 0;
     color: #f1f1f1;
 }
-.services__gallery img{
-    border-radius: 20px;
-    width: 300px;
-}
-.services__gallery div img {
-    width: 80px;
-    margin: 5px 8px;
+.services__gallery {
+    img{
+        border-radius: 20px;
+        width: 300px;
+    }
+    div{
+        img {
+            width: 80px;
+            margin: 5px 8px;
+        }
+    }
 }
 .services__descriptionPost {
     margin: 0 50px;
-    font-size: 2vh
-}
-.services__descriptionPost h2{
-    font-family: 'Staatliches', cursive;
-    margin-top: 20px;
     font-size: 2vh;
+    h2{
+        font-family: 'Staatliches', cursive;
+        margin-top: 20px;
+        font-size: 2vh;
+    }
 }
-.services article {
-    margin: 20px 0;
+.services {
+    article {
+        margin: 20px 0;
+    }
 }
 .services article h3, .services h1, .projects h1{
     margin: 20px 110px;
@@ -407,19 +405,20 @@
     border-radius: 20px;
     width: 100%;
 }
-.projects__descriptionPost p {
-    font-size: 2vh;
-     color: #f1f1f1;
-     text-align: center;
+.projects__descriptionPost{
+    p {
+        font-size: 2vh;
+         color: #f1f1f1;
+         text-align: center;
+    }
+    h2{
+        color: #f1f1f1;
+        margin-top: 4vh;
+        text-align: center; 
+        font-family: 'Staatliches', cursive;
+        font-size: 2.2vh;   
+    }
 }
-.projects__descriptionPost h2{
-    color: #f1f1f1;
-    margin-top: 4vh;
-    text-align: center; 
-    font-family: 'Staatliches', cursive;
-    font-size: 2.2vh;   
-}
-
 .projects__shortDescription {
     margin: 20px 30px;
     font-size: 18px;
@@ -456,14 +455,14 @@
     margin: 40px 40px;
     color: #f1f1f1;
     padding-top: 50px;
-}
-.equipoSuperior h1{
-    font-family: 'Staatliches', cursive;
-    text-align: center;
-    margin-bottom: 40px;
-}
-.equipoSuperior div {
-    width: 100%;
+    h1{
+        font-family: 'Staatliches', cursive;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    div {
+        width: 100%;
+    }
 }
 .equipoInferior{
     margin: auto;
@@ -483,13 +482,15 @@
     margin: 20px 0px;
     color: #f1f1f1;
 }
-.equipoInferior__personas h2 {
-    font-family: 'Staatliches', cursive;
-    margin: 10px 0;
-    font-size: 2vh;
-}
-.equipoInferior__personas p{
-    font-size: 18px;
+.equipoInferior__personas {
+    h2 {
+        font-family: 'Staatliches', cursive;
+        margin: 10px 0;
+        font-size: 2vh;
+    }
+    p{
+        font-size: 18px;
+    }
 }
 /* Diseño de pagina de contacto */
 .wrapperProjectsContact {
@@ -501,20 +502,17 @@
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
 }
-
 .headerContact {
     grid-area: header;
 }
 .contactContainer{
     grid-area: main;
+    display: flex;
 }
 .footer__content{
     grid-area: footer;
 }
-.contactContainer{
-    display: flex;
-}
-.contactContainer__left{
+.contactContainer__left {
     padding-top: 70px;
     width: 100%;
     background-image: linear-gradient(rgba(255, 0, 187, 0.5), rgba(255, 0, 123, 0.2)),url(../images/fondo-contacto.jpeg);
@@ -522,42 +520,42 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.contactContainer__left div{
-    width: 100%;
-}
-.contactContainer__left h1{
-    color: #ffffff;
-    font-size: 30px;
-    margin: 10px 0;
-    text-align: center;
-    font-family: 'Staatliches', cursive;
-}
-.contactContainer__left form{
-    /* width: 100%; */
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10vh;
+    div{
+        width: 100%;
+    }
+    h1{
+        color: #ffffff;
+        font-size: 30px;
+        margin: 10px 0;
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+    }
+    form{
+        /* width: 100%; */
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10vh;
+    }
+    form legend{
+        margin: 10px 0;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+    
+    }
+    form fieldset{
+        width: 20vh;
+        height: 500px;
+        border: none;
+        text-align: center;
+    
+    }
 }
 
-.contactContainer__left form legend{
-    margin: 10px 0;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-
-}
-.contactContainer__left form fieldset{
-    width: 20vh;
-    height: 500px;
-    border: none;
-    text-align: center;
-
-}
 .contactContainer__left__form, .contactContainer__left__textArea{
     width: 300px;
     height: 30px;
@@ -577,9 +575,7 @@
 .contactContainer__left__textArea {
     height: 100px;
 }
-
 @media  (min-width: 1024px){
-    
     /* contenedor del index */
     #wrapperIndex {
         display: grid;
@@ -590,20 +586,24 @@
         grid-template-columns: 1fr 1fr 1fr;
         width: 100%;
     }
-    .mainPage__banner img {
-        display: none;
+    .mainPage__banner{
+        img {
+            display: none;
+        }
     }
     
-    .mainPage__bannerDesktop img{
-        display: block;
-        width: 100%;
-    }
-    .headerOne__nav a {
-        font-size: 16px;
-        transition: 500ms;
+    .mainPage__bannerDesktop{
+        img{
+            display: block;
+            width: 100%;
+        }
     }
     .headerOne__nav{
         display: flex;
+        a {
+            font-size: 16px;
+            transition: 500ms;
+        }
     }
     .hamb{
         display: none;
@@ -618,9 +618,11 @@
         filter: grayscale(100%);
     }
         /* sub banners */
-    .mainPage__Subbanner img {
-        width: 20%;
-        transition: 500ms;
+    .mainPage__Subbanner{
+        img {
+            width: 20%;
+            transition: 500ms;
+        }
     }
     .mainPage__Subbanner img:hover {
         filter: saturate(0%);
@@ -631,8 +633,10 @@
     }
     
     /* marcas con las que trabajamos */
-    .brands__logo img {
-        width: 150px;
+    .brands__logo{
+        img {
+            width: 150px;
+        }
     }
     .brands__logo img:hover{
         filter: grayscale(100%);
@@ -664,15 +668,17 @@
     margin: 60px;
 }
 
-.services h1{
-    text-align: left;
+.services{
+    h1{
+        text-align: left;
+    }
 }
 .featuredServices__images{
     width: 10%;
     filter: grayscale(0%);
 	transition: .3s ease-in-out;
 }
-.featuredServices__images:hover{
+.featuredServices__images:hover {
 	filter: grayscale(100%);
     width: 9%;
 }
@@ -688,11 +694,13 @@
 .servicesAside__title, .projectsAside__tittle{
     margin: 50px 0 0 0;
 }
-.services__descriptionPost h2{
-    font-size: 4vh;
-}
-.services__descriptionPost p{
-    font-size: 3vh;
+.services__descriptionPost{
+    h2{
+        font-size: 4vh;
+    }
+    p{
+        font-size: 3vh;
+    }
 }
 /* pagina de proyectos realizados */
 .wrapperProjects {
@@ -710,33 +718,39 @@
 .projects{
     margin: 60px 100px;
 }
-.projects h1{
-    text-align: left;
-    margin: 0 30px;
+.projects {
+    h1{
+        text-align: left;
+        margin: 0 30px;
+    }
 }
 .projects__descriptionPost{
     font-size: 4vh;
     width: 45%;
     margin: 0 30px;
 }
-.projects__gallery iframe{
-    width: 35%;
+.projects__gallery {
+    iframe{
+        width: 35%;
+    }
+    img {
+        width: 35%;
+        height: 35%;
+    }
 }
-.projects__gallery img {
-    width: 35%;
-    height: 35%;
-}
-.projects__descriptionPost h2{
-    color: #f1f1f1;
-    text-align: left;
-    font-size: 4vh;
+.projects__descriptionPost {
+    h2{
+        color: #f1f1f1;
+        text-align: left;
+        font-size: 4vh;
+    }
+    p{
+        text-align: left;
+        font-size: 3vh;
+    }
 }
 .projects__shortDescription{
     width: 80%;
-    font-size: 3vh;
-}
-.projects__descriptionPost p{
-    text-align: left;
     font-size: 3vh;
 }
 .projects__gallery{
@@ -748,44 +762,46 @@
     justify-content: center;
     color: #f1f1f1;
     padding-top: 50px;
-}
-.equipoSuperior div {
-    width: 40%;
+    div {
+        width: 40%;
+    }
+    p{
+        font-size: 3vh;
+        margin: 10px;
+    }
 }
 .equipoSuperior__imagen{
     width: 39%;
-}
-.equipoSuperior p{
-    font-size: 3vh;
-    margin: 10px;
 }
 .equipoInferior {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: auto;
-}
-.equipoInferior__personas p{
-    font-size: 2.5vh ;
+    p{
+        font-size: 2.5vh ;
+    }
 }
 .equipoInferior__personas{
     width: 22%;
-}
-.equipoInferior__personas img{
-    width: 90%;
-    transition: 500ms;
+    img{
+        width: 90%;
+        transition: 500ms;
+    }
+    h2 {
+        font-size: 3vh;
+    }
 }
 .equipoInferior__personas img:hover{
     filter: grayscale(100%);
     width: 80%;
 }
-.equipoInferior__personas h2 {
-    font-size: 3vh;
-}
 /* Diseño de pagina de contacto */
-.contactContainer__left form{
-    width: 40%;
-
-}
+.contactContainer__left {
+    form{
+        width: 40%;
+    
+    }
+} 
 
 }
