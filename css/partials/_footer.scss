@@ -1,0 +1,38 @@
+/* inicio del footer */
+.footer__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    color: #ffffff;
+    height: 650px;
+    text-align: center;
+    div {
+        margin: 20px 10px;
+    }
+    i {
+        margin: 0 7px; 
+    }
+    h4 {
+        font-family: 'Staatliches', cursive;
+        font-size: 14px;
+    }
+    p{
+        font-size: 12px;
+    }
+    iframe{
+        border-radius: 10px;
+    }
+}
+.footer__content {
+    grid-area: footer;
+}
+.footer__content--links{
+    a{
+        color: #fff;
+        text-decoration: none;
+        margin: 10px 10px;
+        font-size: 12px;
+    }
+} 

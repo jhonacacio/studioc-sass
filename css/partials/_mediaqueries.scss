@@ -1,0 +1,231 @@
+
+@media  (min-width: 1024px){
+    /* contenedor del index */
+    #wrapperIndex {
+        display: grid;
+        grid-template-areas: "header header header"
+                              "main main main"
+                              "footer footer footer";
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .mainPage__banner{
+        img {
+            display: none;
+        }
+    }
+    
+    .mainPage__bannerDesktop{
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    .headerOne__nav{
+        display: flex;
+        a {
+            font-size: 16px;
+            transition: 500ms;
+        }
+    }
+    .hamb{
+        display: none;
+    }
+    .headerOne__nav a:hover{
+        color: #C2D82E;
+    }
+    .headerOne__logo {
+        transition: 300ms;
+    }
+    .headerOne__logo:hover{
+        filter: grayscale(100%);
+    }
+        /* sub banners */
+    .mainPage__Subbanner{
+        img {
+            width: 20%;
+            transition: 500ms;
+        }
+    }
+    .mainPage__Subbanner img:hover {
+        filter: saturate(0%);
+    }
+    /* seccion de servicios destacados */
+    .featuredServices__content{
+        width: 100%;
+    }
+    
+    /* marcas con las que trabajamos */
+    .brands__logo{
+        img {
+            width: 150px;
+        }
+    }
+    .brands__logo img:hover{
+        filter: grayscale(100%);
+        width: 140px;
+    }
+    /* inicio del footer */
+    .footer__content {
+        flex-direction: row;
+        height: 250px;
+        align-items: flex-start;
+    }
+    .featuredServices__title, .brands__tittle{
+        font-size: 4vh;
+    }
+/* pagina deservicios destacados */
+/* contenedor del la pagina de servicios */
+.wrapperServices {
+    display: grid;
+    grid-template-areas: "header header header"
+                          "main main aside"
+                          "footer footer footer";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 0.7fr;
+    width: 100%;
+}
+.services__post {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 60px;
+}
+
+.services{
+    h1{
+        text-align: left;
+    }
+}
+.featuredServices__images{
+    width: 10%;
+    filter: grayscale(0%);
+	transition: .3s ease-in-out;
+}
+.featuredServices__images:hover {
+	filter: grayscale(100%);
+    width: 9%;
+}
+.images__aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.servicesAside img, .projectsAside img {
+    width: 80%;
+    margin: 10px 40px;
+}
+.servicesAside__title, .projectsAside__tittle{
+    margin: 50px 0 0 0;
+}
+.services__descriptionPost{
+    h2{
+        font-size: 4vh;
+    }
+    p{
+        font-size: 3vh;
+    }
+}
+/* pagina de proyectos realizados */
+.wrapperProjects {
+    display: grid;
+    grid-template-areas: "header header header"
+                          "main main aside"
+                          "footer footer footer";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 0.7fr;
+    width: 100%;
+}
+.projects__container{
+    padding-top: 50px;
+}
+.projects{
+    margin: 60px 100px;
+}
+.projects {
+    h1{
+        text-align: left;
+        margin: 0 30px;
+    }
+}
+.projects__descriptionPost{
+    font-size: 4vh;
+    width: 45%;
+    margin: 0 30px;
+}
+.projects__gallery {
+    iframe{
+        width: 35%;
+    }
+    img {
+        width: 35%;
+        height: 35%;
+    }
+}
+.projects__descriptionPost {
+    h2{
+        color: #f1f1f1;
+        text-align: left;
+        font-size: 4vh;
+    }
+    p{
+        text-align: left;
+        font-size: 3vh;
+    }
+}
+.projects__shortDescription{
+    width: 80%;
+    font-size: 3vh;
+}
+.projects__gallery{
+    display: flex;
+}
+/* pagina de nosotros */
+.equipoSuperior {
+    display: flex;
+    justify-content: center;
+    color: #f1f1f1;
+    padding-top: 50px;
+    div {
+        width: 40%;
+    }
+    p{
+        font-size: 3vh;
+        margin: 10px;
+    }
+}
+.equipoSuperior__imagen{
+    width: 39%;
+}
+.equipoInferior {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+    p{
+        font-size: 2.5vh ;
+    }
+}
+.equipoInferior__personas{
+    width: 22%;
+    img{
+        width: 90%;
+        transition: 500ms;
+    }
+    h2 {
+        font-size: 3vh;
+    }
+}
+.equipoInferior__personas img:hover{
+    filter: grayscale(100%);
+    width: 80%;
+}
+/* Diseño de pagina de contacto */
+.contactContainer__left {
+    form{
+        width: 40%;
+    
+    }
+} 
+
+}

@@ -1,0 +1,135 @@
+.headerIndex {
+    grid-area: header;
+}
+.mainPage {
+    grid-area: main;
+}
+.footer__content {
+    grid-area: footer;
+}
+/* logo y navegacion */
+.nav{
+    width: 100%;
+    background-color: #121212;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease-out;
+
+}
+.menu { 
+    a{
+        display: block;
+        padding: 10px;
+        color: #f1f1f1;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Staatliches', cursive;
+    }
+}
+/* Menu Icon */
+.hamb{
+    cursor: pointer;
+    padding: 20px;
+}/* Style label tag */
+.hamb-line {
+    background: #f1f1f1;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+} /* Style span tag */
+.hamb-line::before,
+.hamb-line::after{
+    background: #f1f1f1;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+.side-menu {
+    display: none;
+} /* Hide checkbox */
+.headerIndex {
+    grid-area: header;
+}
+.mainPage {
+    grid-area: main;
+}
+.footer__content {
+    grid-area: footer;
+}
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+.headerOne {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 0px;
+    background-color: #000000;
+}
+.headerOne__logo {
+    width: 200px;
+    margin-top: 20px;
+}
+/* menu de navegacion */
+.headerOne__nav{
+    background-color: #000000;
+    box-shadow: 0px 0px 30px 10px #000000;
+    width: 100%;
+    height: 30px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+        color: #f1f1f1;
+        padding: 5px 7px;
+        font-size: 1px;
+        text-transform: uppercase;
+        font-family: 'Staatliches', cursive;
+    }
+}
+
+// header servicios
+.headerServices {
+    grid-area: header;
+}
+// pagina conocenos
+.headerConocenos {
+    grid-area: header;
+}
+// pagina de contacto
+
+.headerContact {
+    grid-area: header;
+}
