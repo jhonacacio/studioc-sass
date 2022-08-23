@@ -38,30 +38,29 @@
     transition: max-height .5s ease-out;
 
 }
-.menu a{
-    display: block;
-    padding: 10px;
-    color: #f1f1f1;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Staatliches', cursive;
+.menu { 
+    a{
+        display: block;
+        padding: 10px;
+        color: #f1f1f1;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Staatliches', cursive;
+    }
 }
 /* Menu Icon */
 .hamb{
     cursor: pointer;
     padding: 20px;
 }/* Style label tag */
-
 .hamb-line {
     background: #f1f1f1;
     display: block;
     height: 2px;
     position: relative;
     width: 24px;
-
 } /* Style span tag */
-
 .hamb-line::before,
 .hamb-line::after{
     background: #f1f1f1;
@@ -152,12 +151,16 @@
     }
 } 
 /* banner principal  */
-.mainPage__banner img {
-    width: 100%;
+.mainPage__banner {
+    img {
+        width: 100%;
+    }
 }
-.mainPage__bannerDesktop img{
-    display: none;
-}
+.mainPage__bannerDesktop{
+    img{
+        display: none;
+    }
+} 
 /* sub banners */
 .mainPage__Subbanner {
     display: flex;
@@ -201,13 +204,12 @@
     width: 100%;
     height: 100px;
     margin:auto
+    img {
+        width: 100px;
+        margin: 10px;
+        transition: 500ms;
+    }
 }
-.brands__logo img {
-    width: 100px;
-    margin: 10px;
-    transition: 500ms;
-}
-
 /* inicio del footer */
 .footer__content {
     display: flex;

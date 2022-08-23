@@ -216,10 +216,8 @@
   flex-wrap: wrap;
   width: 100%;
   height: 100px;
-  margin: auto;
 }
-
-.brands__logo img {
+.brands__logo margin:auto img {
   width: 100px;
   margin: 10px;
   transition: 500ms;
