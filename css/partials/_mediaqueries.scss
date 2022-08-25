@@ -1,4 +1,3 @@
-
 @media  (min-width: 1024px){
     /* contenedor del index */
     #wrapperIndex {
@@ -15,7 +14,6 @@
             display: none;
         }
     }
-    
     .mainPage__bannerDesktop{
         img{
             display: block;
@@ -65,7 +63,6 @@
     .featuredServices__content{
         width: 100%;
     }
-    
     /* marcas con las que trabajamos */
     .brands__logo{
         img {
@@ -90,7 +87,7 @@
         font-size: 4vh;
     }
 /* pagina deservicios destacados */
-/* contenedor del la pagina de servicios */
+/* contenedor de la pagina de servicios */
 .wrapperServices {
     display: grid;
     grid-template-areas: "header header header"
@@ -105,7 +102,6 @@
     align-items: flex-start;
     margin: 60px;
 }
-
 .services{
     h1{
         text-align: left;
@@ -247,5 +243,4 @@
     
     }
 } 
-
 }

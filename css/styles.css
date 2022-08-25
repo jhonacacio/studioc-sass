@@ -682,7 +682,7 @@
     font-size: 4vh;
   }
   /* pagina deservicios destacados */
-  /* contenedor del la pagina de servicios */
+  /* contenedor de la pagina de servicios */
   .wrapperServices {
     display: grid;
     grid-template-areas: "header header header" "main main aside" "footer footer footer";
