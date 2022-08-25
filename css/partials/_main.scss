@@ -164,7 +164,7 @@
     text-decoration: none;
     color: $fontColor;
     font-size: 20px;
-    background-color: #C2D82E;
+    background-color: $secondaryColor;
     width: 120px;
     border-radius: 10px;
 }
@@ -172,10 +172,19 @@
     display: flex;
     justify-content: center;
 }
-.servicesAside__contact:hover, .projectsAside__contact:hover {
-    background-color: #E72E8B;
-    color: $fontColor;
-    transition: 0.2s;
+.servicesAside__contact{
+    &:hover {
+        background-color: $complementarycolor;
+        color: $fontColor;
+        transition: 0.2s;
+    }
+}
+.projectsAside__contact{
+    &:hover {
+        background-color: $complementarycolor;
+        color: $fontColor;
+        transition: 0.2s;
+    }
 }
 // pagina de proyectos
 
@@ -327,13 +336,13 @@
 .contactContainer__left__form, .contactContainer__left__textArea{
     width: 300px;
     height: 30px;
-    border: solid 2px #E72E8B;
+    border: solid 2px $complementarycolor;
     border-radius: 20px;
     text-align: center;
     font-size: 12px;
 }
 .button {
-    background-color: #C2D82E;
+    background-color: $secondaryColor;
     color: $fontColor;
     border: none;
     padding: 10px;

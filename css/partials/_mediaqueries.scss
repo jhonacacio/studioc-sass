@@ -32,14 +32,20 @@
     .hamb{
         display: none;
     }
-    .headerOne__nav a:hover{
-        color: #C2D82E;
+    .headerOne__nav {
+        a{
+            &:hover{
+                color: $secondaryColor;
+            }
+        }
     }
     .headerOne__logo {
         transition: 300ms;
     }
-    .headerOne__logo:hover{
-        filter: grayscale(100%);
+    .headerOne__logo{
+        &:hover{
+            filter: grayscale(100%);
+        }
     }
         /* sub banners */
     .mainPage__Subbanner{
@@ -48,8 +54,12 @@
             transition: 500ms;
         }
     }
-    .mainPage__Subbanner img:hover {
-        filter: saturate(0%);
+    .mainPage__Subbanner {
+        img{
+            &:hover {
+                filter: saturate(0%);
+            }
+        }
     }
     /* seccion de servicios destacados */
     .featuredServices__content{
@@ -62,9 +72,13 @@
             width: 150px;
         }
     }
-    .brands__logo img:hover{
-        filter: grayscale(100%);
-        width: 140px;
+    .brands__logo {
+        img{
+            &:hover{
+                filter: grayscale(100%);
+                width: 140px;
+            }
+        }
     }
     /* inicio del footer */
     .footer__content {
@@ -102,9 +116,11 @@
     filter: grayscale(0%);
 	transition: .3s ease-in-out;
 }
-.featuredServices__images:hover {
-	filter: grayscale(100%);
-    width: 9%;
+.featuredServices__images{
+    &:hover {
+        filter: grayscale(100%);
+        width: 9%;
+    }
 }
 .images__aside{
     display: flex;
@@ -216,9 +232,13 @@
         font-size: 3vh;
     }
 }
-.equipoInferior__personas img:hover{
-    filter: grayscale(100%);
-    width: 80%;
+.equipoInferior__personas{
+    img{
+        &:hover{
+            filter: grayscale(100%);
+            width: 80%;
+        }
+    }
 }
 /* Diseño de pagina de contacto */
 .contactContainer__left {
