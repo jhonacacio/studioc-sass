@@ -122,7 +122,12 @@
     width: 100%;
 }
 /* lista lateral de servicios */
-.servicesAside, .projectsAside {
+.servicesAside {
+    background-image: linear-gradient(rgba(255, 0, 187, 0.5), rgba(255, 0, 123, 0.2)),url(../images/fondo-contacto.jpeg);
+    background-size: cover;
+    padding-top: 50px;
+}
+.projectsAside {
     background-image: linear-gradient(rgba(255, 0, 187, 0.5), rgba(255, 0, 123, 0.2)),url(../images/fondo-contacto.jpeg);
     background-size: cover;
     padding-top: 50px;
@@ -154,22 +159,43 @@
     display: flex;
     justify-content: center;
 }
-.servicesAside__contact, .projectsAside__contact {
+.servicesAside__contact {
     margin: 30px 0;
     padding: 10px 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     text-decoration: none;
-    color: &primaryColor;
+    color: $primaryColor;
     font-size: 20px;
     background-color: $secondaryColor;
     width: 120px;
     border-radius: 10px;
 }
-.servicesAside div, .projectsAside div{
+.projectsAside__contact {
+    margin: 30px 0;
+    padding: 10px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: $primaryColor;
+    font-size: 20px;
+    background-color: $secondaryColor;
+    width: 120px;
+    border-radius: 10px;
+}
+.servicesAside {
+    div{
+        display: flex;
+        justify-content: center;
+    }
+}
+.projectsAside {
+    div{
+        display: flex;
+        justify-content: center;
+    }
 }
 .servicesAside__contact{
     &:hover {

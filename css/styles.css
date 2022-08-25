@@ -277,7 +277,13 @@
 }
 
 /* lista lateral de servicios */
-.servicesAside, .projectsAside {
+.servicesAside {
+  background-image: linear-gradient(rgba(255, 0, 187, 0.5), rgba(255, 0, 123, 0.2)), url(../images/fondo-contacto.jpeg);
+  background-size: cover;
+  padding-top: 50px;
+}
+
+.projectsAside {
   background-image: linear-gradient(rgba(255, 0, 187, 0.5), rgba(255, 0, 123, 0.2)), url(../images/fondo-contacto.jpeg);
   background-size: cover;
   padding-top: 50px;
@@ -316,21 +322,40 @@
   justify-content: center;
 }
 
-.servicesAside__contact, .projectsAside__contact {
+.servicesAside__contact {
   margin: 30px 0;
   padding: 10px 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   text-decoration: none;
-  color: .servicesAside__contact, .projectsAside__contact primaryColor;
+  color: #121212;
   font-size: 20px;
   background-color: #C2D82E;
   width: 120px;
   border-radius: 10px;
 }
 
-.servicesAside div, .projectsAside div {
+.projectsAside__contact {
+  margin: 30px 0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  color: #121212;
+  font-size: 20px;
+  background-color: #C2D82E;
+  width: 120px;
+  border-radius: 10px;
+}
+
+.servicesAside div {
+  display: flex;
+  justify-content: center;
+}
+
+.projectsAside div {
   display: flex;
   justify-content: center;
 }
