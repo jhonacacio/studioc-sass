@@ -23,7 +23,7 @@
     .headerOne__nav{
         display: flex;
         a {
-            font-size: 16px;
+            font-size: $primaryFontSize;
             transition: 500ms;
         }
     }
@@ -135,7 +135,7 @@
         font-size: 4vh;
     }
     p{
-        font-size: 3vh;
+        font-size: $primaryFontSize;
     }
 }
 /* pagina de proyectos realizados */
@@ -161,7 +161,7 @@
     }
 }
 .projects__descriptionPost{
-    font-size: 4vh;
+    font-size: $primaryFontSize;
     width: 45%;
     margin: 0 30px;
 }
@@ -178,16 +178,16 @@
     h2{
         color: $fontColor;
         text-align: left;
-        font-size: 4vh;
+        font-size: $primaryFontSize;
     }
     p{
         text-align: left;
-        font-size: 3vh;
+        font-size: $primaryFontSize;
     }
 }
 .projects__shortDescription{
     width: 80%;
-    font-size: 3vh;
+    font-size: $primaryFontSize;
 }
 .projects__gallery{
     display: flex;
@@ -202,7 +202,7 @@
         width: 40%;
     }
     p{
-        font-size: 3vh;
+        font-size: $primaryFontSize;
         margin: 10px;
     }
 }
@@ -215,7 +215,7 @@
     flex-wrap: wrap;
     margin: auto;
     p{
-        font-size: 2.5vh ;
+        font-size: $primaryFontSize ;
     }
 }
 .equipoInferior__personas{

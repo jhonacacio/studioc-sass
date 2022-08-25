@@ -133,7 +133,7 @@
   text-decoration: none;
   color: #f1f1f1;
   padding: 5px 7px;
-  font-size: 1px;
+  font-size: primaryFontSize;
   text-transform: uppercase;
   font-family: "Staatliches", cursive;
 }
@@ -252,12 +252,11 @@
 
 .services__descriptionPost {
   margin: 0 50px;
-  font-size: 2vh;
+  font-size: 1em;
 }
 .services__descriptionPost h2 {
   font-family: "Staatliches", cursive;
   margin-top: 20px;
-  font-size: 2vh;
 }
 
 .services article {
@@ -324,7 +323,7 @@
   justify-content: space-evenly;
   align-items: center;
   text-decoration: none;
-  color: #f1f1f1;
+  color: .servicesAside__contact, .projectsAside__contact primaryColor;
   font-size: 20px;
   background-color: #C2D82E;
   width: 120px;
@@ -381,7 +380,7 @@
 }
 
 .projects__descriptionPost p {
-  font-size: 2vh;
+  font-size: 1em;
   color: #f1f1f1;
   text-align: center;
 }
@@ -395,7 +394,7 @@
 
 .projects__shortDescription {
   margin: 20px 30px;
-  font-size: 18px;
+  font-size: 1em;
   color: #f1f1f1;
 }
 
@@ -451,7 +450,7 @@
   font-size: 2vh;
 }
 .equipoInferior__personas p {
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .contactContainer {
@@ -507,7 +506,7 @@
   border: solid 2px #E72E8B;
   border-radius: 20px;
   text-align: center;
-  font-size: 12px;
+  font-size: 1em;
 }
 
 .button {
@@ -637,7 +636,7 @@
     display: flex;
   }
   .headerOne__nav a {
-    font-size: 16px;
+    font-size: 1em;
     transition: 500ms;
   }
   .hamb {
@@ -723,7 +722,7 @@
     font-size: 4vh;
   }
   .services__descriptionPost p {
-    font-size: 3vh;
+    font-size: 1em;
   }
   /* pagina de proyectos realizados */
   .wrapperProjects {
@@ -744,7 +743,7 @@
     margin: 0 30px;
   }
   .projects__descriptionPost {
-    font-size: 4vh;
+    font-size: 1em;
     width: 45%;
     margin: 0 30px;
   }
@@ -758,15 +757,15 @@
   .projects__descriptionPost h2 {
     color: #f1f1f1;
     text-align: left;
-    font-size: 4vh;
+    font-size: 1em;
   }
   .projects__descriptionPost p {
     text-align: left;
-    font-size: 3vh;
+    font-size: 1em;
   }
   .projects__shortDescription {
     width: 80%;
-    font-size: 3vh;
+    font-size: 1em;
   }
   .projects__gallery {
     display: flex;
@@ -782,7 +781,7 @@
     width: 40%;
   }
   .equipoSuperior p {
-    font-size: 3vh;
+    font-size: 1em;
     margin: 10px;
   }
   .equipoSuperior__imagen {
@@ -795,7 +794,7 @@
     margin: auto;
   }
   .equipoInferior p {
-    font-size: 2.5vh;
+    font-size: 1em;
   }
   .equipoInferior__personas {
     width: 22%;

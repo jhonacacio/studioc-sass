@@ -99,11 +99,10 @@
 }
 .services__descriptionPost {
     margin: 0 50px;
-    font-size: 2vh;
+    font-size: $primaryFontSize;
     h2{
         font-family: 'Staatliches', cursive;
         margin-top: 20px;
-        font-size: 2vh;
     }
 }
 .services {
@@ -162,7 +161,7 @@
     justify-content: space-evenly;
     align-items: center;
     text-decoration: none;
-    color: $fontColor;
+    color: &primaryColor;
     font-size: 20px;
     background-color: $secondaryColor;
     width: 120px;
@@ -215,7 +214,7 @@
 }
 .projects__descriptionPost{
     p {
-        font-size: 2vh;
+        font-size: $primaryFontSize;
          color: $fontColor;
          text-align: center;
     }
@@ -229,7 +228,7 @@
 }
 .projects__shortDescription {
     margin: 20px 30px;
-    font-size: 18px;
+    font-size: $primaryFontSize;
     color: $fontColor;
 }
 /* lista lateral de proyectos */
@@ -281,7 +280,7 @@
         font-size: 2vh;
     }
     p{
-        font-size: 18px;
+        font-size: $primaryFontSize;
     }
 }
 // pagina de contacto
@@ -339,7 +338,7 @@
     border: solid 2px $complementarycolor;
     border-radius: 20px;
     text-align: center;
-    font-size: 12px;
+    font-size: $primaryFontSize;
 }
 .button {
     background-color: $secondaryColor;
