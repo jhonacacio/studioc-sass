@@ -164,7 +164,7 @@
 }
 .projects__descriptionPost {
     h2{
-        color: #f1f1f1;
+        color: $fontColor;
         text-align: left;
         font-size: 4vh;
     }
@@ -184,7 +184,7 @@
 .equipoSuperior {
     display: flex;
     justify-content: center;
-    color: #f1f1f1;
+    color: $fontColor;
     padding-top: 50px;
     div {
         width: 40%;

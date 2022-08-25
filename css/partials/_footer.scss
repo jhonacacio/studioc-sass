@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     background-color: #000000;
-    color: #ffffff;
+    color: $fontColor;
     height: 650px;
     text-align: center;
     div {
@@ -30,7 +30,7 @@
 }
 .footer__content--links{
     a{
-        color: #fff;
+        color: $fontColor;
         text-decoration: none;
         margin: 10px 10px;
         font-size: 12px;
