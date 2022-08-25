@@ -104,7 +104,8 @@
 }
 .services{
     h1{
-        text-align: left;
+        margin-top: 110px;
+        }
     }
 }
 .featuredServices__images{
@@ -198,7 +199,7 @@
     display: flex;
     justify-content: center;
     color: $fontColor;
-    padding-top: 50px;
+    padding-top: 100px;
     div {
         width: 40%;
     }
@@ -244,4 +245,3 @@
     
     }
 } 
-}

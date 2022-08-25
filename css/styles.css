@@ -361,7 +361,7 @@
 /* Seccion de servicios */
 .services {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .services__post {
@@ -462,7 +462,7 @@
 
 .projects {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 .projects h1 {
   margin: 20px 110px;
@@ -517,7 +517,7 @@
 }
 
 .equipoSuperior {
-  margin: 40px 40px;
+  margin: 10px 40px;
   color: #f1f1f1;
   padding-top: 50px;
 }
@@ -710,124 +710,144 @@
     margin: 60px 100px;
   }
   .services h1 {
-    text-align: left;
+    margin-top: 110px;
   }
-  .featuredServices__images {
-    width: 10%;
-    filter: grayscale(0%);
-    transition: 0.3s ease-in-out;
-  }
-  .featuredServices__images:hover {
-    filter: grayscale(100%);
-    width: 9%;
-  }
-  .images__aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .servicesAside img, .projectsAside img {
-    width: 80%;
-    margin: 10px 40px;
-  }
-  .servicesAside__title, .projectsAside__tittle {
-    margin: 50px 0 0 0;
-  }
-  .services__descriptionPost h2 {
-    font-size: 4vh;
-  }
-  .services__descriptionPost p {
-    font-size: 1em;
-  }
-  /* pagina de proyectos realizados */
-  .wrapperProjects {
-    display: grid;
-    grid-template-areas: "header header header" "main main aside" "footer footer footer";
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 0.7fr;
-    width: 100%;
-  }
-  .projects__container {
-    padding-top: 50px;
-  }
-  .projects {
-    margin: 60px 100px;
-  }
-  .projects h1 {
-    text-align: left;
-    margin: 0 30px;
-  }
-  .projects__descriptionPost {
-    font-size: 1em;
-    width: 45%;
-    margin: 0 30px;
-  }
-  .projects__gallery iframe {
-    width: 35%;
-    height: 200px;
-  }
-  .projects__gallery img {
-    width: 35%;
-    height: 35%;
-  }
-  .projects__descriptionPost h2 {
-    color: #f1f1f1;
-    text-align: left;
-    font-size: 1em;
-  }
-  .projects__descriptionPost p {
-    text-align: left;
-    font-size: 1em;
-  }
-  .projects__shortDescription {
-    width: 80%;
-    font-size: 1em;
-  }
-  .projects__gallery {
-    display: flex;
-  }
-  /* pagina de nosotros */
-  .equipoSuperior {
-    display: flex;
-    justify-content: center;
-    color: #f1f1f1;
-    padding-top: 50px;
-  }
-  .equipoSuperior div {
-    width: 40%;
-  }
-  .equipoSuperior p {
-    font-size: 1em;
-    margin: 10px;
-  }
-  .equipoSuperior__imagen {
-    width: 39%;
-  }
-  .equipoInferior {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: auto;
-  }
-  .equipoInferior p {
-    font-size: 1em;
-  }
-  .equipoInferior__personas {
-    width: 22%;
-  }
-  .equipoInferior__personas img {
-    width: 90%;
-    transition: 500ms;
-  }
-  .equipoInferior__personas h2 {
-    font-size: 3vh;
-  }
-  .equipoInferior__personas img:hover {
-    filter: grayscale(100%);
-    width: 80%;
-  }
-  /* Diseño de pagina de contacto */
-  .contactContainer__left form {
-    width: 40%;
-  }
+}
+.featuredServices__images {
+  width: 10%;
+  filter: grayscale(0%);
+  transition: 0.3s ease-in-out;
+}
+
+.featuredServices__images:hover {
+  filter: grayscale(100%);
+  width: 9%;
+}
+
+.images__aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.servicesAside img, .projectsAside img {
+  width: 80%;
+  margin: 10px 40px;
+}
+
+.servicesAside__title, .projectsAside__tittle {
+  margin: 50px 0 0 0;
+}
+
+.services__descriptionPost h2 {
+  font-size: 4vh;
+}
+.services__descriptionPost p {
+  font-size: 1em;
+}
+
+/* pagina de proyectos realizados */
+.wrapperProjects {
+  display: grid;
+  grid-template-areas: "header header header" "main main aside" "footer footer footer";
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 0.7fr;
+  width: 100%;
+}
+
+.projects__container {
+  padding-top: 50px;
+}
+
+.projects {
+  margin: 60px 100px;
+}
+
+.projects h1 {
+  text-align: left;
+  margin: 0 30px;
+}
+
+.projects__descriptionPost {
+  font-size: 1em;
+  width: 45%;
+  margin: 0 30px;
+}
+
+.projects__gallery iframe {
+  width: 35%;
+  height: 200px;
+}
+.projects__gallery img {
+  width: 35%;
+  height: 35%;
+}
+
+.projects__descriptionPost h2 {
+  color: #f1f1f1;
+  text-align: left;
+  font-size: 1em;
+}
+.projects__descriptionPost p {
+  text-align: left;
+  font-size: 1em;
+}
+
+.projects__shortDescription {
+  width: 80%;
+  font-size: 1em;
+}
+
+.projects__gallery {
+  display: flex;
+}
+
+/* pagina de nosotros */
+.equipoSuperior {
+  display: flex;
+  justify-content: center;
+  color: #f1f1f1;
+  padding-top: 100px;
+}
+.equipoSuperior div {
+  width: 40%;
+}
+.equipoSuperior p {
+  font-size: 1em;
+  margin: 10px;
+}
+
+.equipoSuperior__imagen {
+  width: 39%;
+}
+
+.equipoInferior {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.equipoInferior p {
+  font-size: 1em;
+}
+
+.equipoInferior__personas {
+  width: 22%;
+}
+.equipoInferior__personas img {
+  width: 90%;
+  transition: 500ms;
+}
+.equipoInferior__personas h2 {
+  font-size: 3vh;
+}
+
+.equipoInferior__personas img:hover {
+  filter: grayscale(100%);
+  width: 80%;
+}
+
+/* Diseño de pagina de contacto */
+.contactContainer__left form {
+  width: 40%;
 }/*# sourceMappingURL=styles.css.map */
