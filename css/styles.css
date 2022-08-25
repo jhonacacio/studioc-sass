@@ -177,7 +177,7 @@
 .featuredServices__title, .brands__tittle {
   text-align: center;
   margin: 30px 0;
-  color: #d5d5d5;
+  color: #f1f1f1;
   font-family: "Staatliches", cursive;
   font-size: 2vh;
 }
@@ -324,7 +324,7 @@
   justify-content: space-evenly;
   align-items: center;
   text-decoration: none;
-  color: #000000;
+  color: #f1f1f1;
   font-size: 20px;
   background-color: #C2D82E;
   width: 120px;
@@ -338,7 +338,7 @@
 
 .servicesAside__contact:hover, .projectsAside__contact:hover {
   background-color: #E72E8B;
-  color: #ffffff;
+  color: #f1f1f1;
   transition: 0.2s;
 }
 
@@ -466,7 +466,7 @@
   width: 100%;
 }
 .contactContainer__left h1 {
-  color: #ffffff;
+  color: #f1f1f1;
   font-size: 30px;
   margin: 10px 0;
   text-align: center;
@@ -474,7 +474,7 @@
 }
 .contactContainer__left form {
   /* width: 100%; */
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   border-radius: 20px;
   padding: 20px;
   display: flex;
@@ -506,7 +506,7 @@
 
 .button {
   background-color: #C2D82E;
-  color: #000000;
+  color: #f1f1f1;
   border: none;
   padding: 10px;
   border-radius: 20px;
@@ -524,7 +524,7 @@
   align-items: center;
   flex-direction: column;
   background-color: #000000;
-  color: #ffffff;
+  color: #f1f1f1;
   height: 650px;
   text-align: center;
 }
@@ -550,7 +550,7 @@
 }
 
 .footer__content--links a {
-  color: #fff;
+  color: #f1f1f1;
   text-decoration: none;
   margin: 10px 10px;
   font-size: 12px;

@@ -162,7 +162,7 @@
     justify-content: space-evenly;
     align-items: center;
     text-decoration: none;
-    color: #000000;
+    color: $fontColor;
     font-size: 20px;
     background-color: #C2D82E;
     width: 120px;
@@ -334,7 +334,7 @@
 }
 .button {
     background-color: #C2D82E;
-    color: #000000;
+    color: $fontColor;
     border: none;
     padding: 10px;
     border-radius: 20px;
