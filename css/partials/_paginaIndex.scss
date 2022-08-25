@@ -1,0 +1,57 @@
+/* banner principal  */
+.mainPage__banner {
+    img {
+        width: 100%;
+    }
+}
+.mainPage__bannerDesktop{
+    img{
+        display: none;
+    }
+} 
+/* sub banners */
+.mainPage__Subbanner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    img {
+        width: 38%;
+        margin: 15px 10px;
+        border-radius: 10px;
+        filter: saturate(100%);
+    }
+}
+/* seccion de servicios destacados */
+.featuredServices__title, .brands__tittle{
+    text-align: center;
+    margin: 30px 0;
+}
+.featuredServices__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+.featuredServices__images{
+    width: 39%;
+    border-radius: 20px;
+    margin: 10px;
+}
+/* marcas con las que trabajamos */
+.brands__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    margin:auto;
+    img {
+        width: 100px;
+        margin: 10px;
+        transition: 500ms;
+    }
+}

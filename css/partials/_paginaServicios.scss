@@ -1,0 +1,110 @@
+// main pagina servicios
+.services__container {
+    grid-area: main;
+}
+.servicesAside {
+    grid-area: aside;
+}
+.servicesAside__title {
+    text-align: center;
+}
+/* Seccion de servicios */
+.services {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.services__post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    color: $fontColor;
+}
+.services__gallery {
+    img{
+        border-radius: 20px;
+        width: 300px;
+    }
+    div{
+        img {
+            width: 80px;
+            margin: 5px 8px;
+        }
+    }
+}
+.services__descriptionPost {
+    margin: 0 50px;
+    font-size: $primaryFontSize;
+}
+.services {
+    width: 100%;
+    article h3,h1 {
+    margin: 20px 110px;
+    }
+    article {
+        margin: 20px 0;
+    }
+}
+/* lista lateral de servicios */
+.servicesAside, .projectsAside {
+    background-image: linear-gradient(rgba(255, 0, 187, 0.5), rgba(255, 0, 123, 0.2)),url(../images/fondo-contacto.jpeg);
+    background-size: cover;
+    padding-top: 50px;
+}
+.projectsAside__title {
+    margin: 60px 0 0 0;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    color: $fontColor;
+}
+.servicesAside__list, .projectsAside__list {
+    text-align: center;
+    a{
+        color: $fontColor;
+        line-height: 30px;
+        text-decoration: none;
+    }
+}
+.images__aside{
+    display: flex;
+    justify-content: center;
+}
+.servicesAside, .projectsAside{
+    img{
+        border-radius: 20px;
+        margin: 30px auto;
+        width: 20vh;
+    }
+}
+.projectsAside__imgEquipo{
+    display: flex;
+    justify-content: center;
+}
+.servicesAside__contact, .projectsAside__contact {
+    margin: 30px 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: $primaryColor;
+    font-size: 20px;
+    background-color: $secondaryColor;
+    width: 120px;
+    border-radius: 10px;
+}
+
+.servicesAside, .projectsAside{
+    div{
+        display: flex;
+        justify-content: center;
+    }
+}
+.servicesAside__contact, .projectsAside__contact{
+    &:hover {
+        background-color: $complementarycolor;
+        color: $fontColor;
+        transition: 0.2s;
+    }
+}

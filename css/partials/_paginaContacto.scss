@@ -1,0 +1,73 @@
+// pagina de contacto
+.contactContainer{
+    grid-area: main;
+    display: flex;
+}
+.contactContainer__left {
+    padding-top: 70px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 0, 187, 0.5), rgba(255, 0, 123, 0.2)),url(../images/fondo-contacto.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+        width: 100%;
+    }
+    h1{
+        color: $fontColor;
+        font-size: 30px;
+        margin: 10px 0;
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+    }
+    form{
+        /* width: 100%; */
+        background-color: $fontColor;
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10vh;
+    }
+    form legend{
+        margin: 10px 0;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+    
+    }
+    form fieldset{
+        width: 20vh;
+        height: 500px;
+        border: none;
+        text-align: center;
+    
+    }
+}
+.button {
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+}
+.contactContainer__left__form{
+    width: 300px;
+    height: 30px;
+    border: solid 2px $complementarycolor;
+    border-radius: 20px;
+    text-align: center;
+    font-size: $primaryFontSize;
+}
+.contactContainer__left__textArea{
+    width: 300px;
+    height: 80px;
+    border: solid 2px $complementarycolor;
+    border-radius: 20px;
+    text-align: center;
+    font-size: $primaryFontSize;
+    padding-top: 60px;
+}

@@ -150,6 +150,105 @@
   grid-area: header;
 }
 
+/* inicio del footer */
+.footer__content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: #121212;
+  color: #f1f1f1;
+  height: 650px;
+  text-align: center;
+}
+.footer__content div {
+  margin: 20px 10px;
+}
+.footer__content i {
+  margin: 0 7px;
+}
+.footer__content h4 {
+  font-family: "Staatliches", cursive;
+  font-size: 14px;
+}
+.footer__content p {
+  font-size: 12px;
+}
+.footer__content iframe {
+  border-radius: 10px;
+}
+
+.footer__content {
+  grid-area: footer;
+}
+
+.footer__content--links a {
+  color: #f1f1f1;
+  text-decoration: none;
+  margin: 10px 10px;
+  font-size: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+* h1, * h2, * h3 {
+  font-size: 2em;
+  font-family: "Staatliches", cursive;
+  color: #f1f1f1;
+}
+
+#wrapperIndex {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  width: 100%;
+  background-color: #121212;
+}
+
+/* pagina de servicios destacados */
+.wrapperServices {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "aside aside aside" "footer footer footer";
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  width: 100%;
+  background-color: #121212;
+}
+
+/* pagina de proyectos realizados */
+.wrapperProjects {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "aside aside aside" "footer footer footer";
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  width: 100%;
+  background-color: #121212;
+}
+
+/* seccion superior de la pagina conocenos */
+.wrapperProjectsConocenos {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  width: 100%;
+  background-color: #121212;
+}
+
+/* Diseño de pagina de contacto */
+.wrapperProjectsContact {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
 /* banner principal  */
 .mainPage__banner img {
   width: 100%;
@@ -177,9 +276,6 @@
 .featuredServices__title, .brands__tittle {
   text-align: center;
   margin: 30px 0;
-  color: #f1f1f1;
-  font-family: "Staatliches", cursive;
-  font-size: 2vh;
 }
 
 .featuredServices__content {
@@ -223,12 +319,10 @@
 
 .servicesAside__title {
   text-align: center;
-  color: #f1f1f1;
-  font-family: "Staatliches", cursive;
 }
 
 /* Seccion de servicios */
-.services, .projects {
+.services {
   width: 100%;
   margin-top: 100px;
 }
@@ -254,36 +348,19 @@
   margin: 0 50px;
   font-size: 1em;
 }
-.services__descriptionPost h2 {
-  font-family: "Staatliches", cursive;
-  margin-top: 20px;
-}
-
-.services article {
-  margin: 20px 0;
-}
-
-.services article h3, .services h1, .projects h1 {
-  margin: 20px 110px;
-  font-size: 25px;
-  font-weight: 100;
-  text-align: center;
-  color: #f1f1f1;
-  font-family: "Staatliches", cursive;
-}
 
 .services {
   width: 100%;
 }
-
-/* lista lateral de servicios */
-.servicesAside {
-  background-image: linear-gradient(rgba(255, 0, 187, 0.5), rgba(255, 0, 123, 0.2)), url(../images/fondo-contacto.jpeg);
-  background-size: cover;
-  padding-top: 50px;
+.services article h3, .services h1 {
+  margin: 20px 110px;
+}
+.services article {
+  margin: 20px 0;
 }
 
-.projectsAside {
+/* lista lateral de servicios */
+.servicesAside, .projectsAside {
   background-image: linear-gradient(rgba(255, 0, 187, 0.5), rgba(255, 0, 123, 0.2)), url(../images/fondo-contacto.jpeg);
   background-size: cover;
   padding-top: 50px;
@@ -296,10 +373,9 @@
   color: #f1f1f1;
 }
 
-.servicesAside__list {
+.servicesAside__list, .projectsAside__list {
   text-align: center;
 }
-
 .servicesAside__list a, .projectsAside__list a {
   color: #f1f1f1;
   line-height: 30px;
@@ -322,7 +398,7 @@
   justify-content: center;
 }
 
-.servicesAside__contact {
+.servicesAside__contact, .projectsAside__contact {
   margin: 30px 0;
   padding: 10px 20px;
   display: flex;
@@ -336,40 +412,23 @@
   border-radius: 10px;
 }
 
-.projectsAside__contact {
-  margin: 30px 0;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-decoration: none;
-  color: #121212;
-  font-size: 20px;
-  background-color: #C2D82E;
-  width: 120px;
-  border-radius: 10px;
-}
-
-.servicesAside div {
+.servicesAside div, .projectsAside div {
   display: flex;
   justify-content: center;
 }
 
-.projectsAside div {
-  display: flex;
-  justify-content: center;
-}
-
-.servicesAside__contact:hover {
+.servicesAside__contact:hover, .projectsAside__contact:hover {
   background-color: #E72E8B;
   color: #f1f1f1;
   transition: 0.2s;
 }
 
-.projectsAside__contact:hover {
-  background-color: #E72E8B;
-  color: #f1f1f1;
-  transition: 0.2s;
+.projects {
+  width: 100%;
+  margin-top: 100px;
+}
+.projects h1 {
+  margin: 20px 110px;
 }
 
 .projects__header {
@@ -399,7 +458,12 @@
   width: 100%;
 }
 
-.projects__gallery iframe, .projects__gallery img {
+.projects__gallery img {
+  border-radius: 20px;
+  width: 100%;
+  height: 200px;
+}
+.projects__gallery iframe {
   border-radius: 20px;
   width: 100%;
   height: 200px;
@@ -448,13 +512,15 @@
 .equipoSuperior div {
   width: 100%;
 }
+.equipoSuperior img {
+  border-radius: 20px;
+}
 
 .equipoInferior {
   margin: auto;
   width: 80%;
 }
-
-.equipoSuperior img, .equipoInferior img {
+.equipoInferior img {
   border-radius: 20px;
 }
 
@@ -469,7 +535,6 @@
   margin: 20px 0px;
   color: #f1f1f1;
 }
-
 .equipoInferior__personas h2 {
   font-family: "Staatliches", cursive;
   margin: 10px 0;
@@ -526,7 +591,16 @@
   text-align: center;
 }
 
-.contactContainer__left__form, .contactContainer__left__textArea {
+.button {
+  background-color: #C2D82E;
+  color: #121212;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 300px;
+}
+
+.contactContainer__left__form {
   width: 300px;
   height: 30px;
   border: solid 2px #E72E8B;
@@ -535,113 +609,14 @@
   font-size: 1em;
 }
 
-.button {
-  background-color: #C2D82E;
-  color: #f1f1f1;
-  border: none;
-  padding: 10px;
-  border-radius: 20px;
-  width: 300px;
-}
-
 .contactContainer__left__textArea {
-  height: 100px;
-  padding-top: 60px;
+  width: 300px;
   height: 80px;
-}
-
-/* inicio del footer */
-.footer__content {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  background-color: #121212;
-  color: #f1f1f1;
-  height: 650px;
+  border: solid 2px #E72E8B;
+  border-radius: 20px;
   text-align: center;
-}
-.footer__content div {
-  margin: 20px 10px;
-}
-.footer__content i {
-  margin: 0 7px;
-}
-.footer__content h4 {
-  font-family: "Staatliches", cursive;
-  font-size: 14px;
-}
-.footer__content p {
-  font-size: 12px;
-}
-.footer__content iframe {
-  border-radius: 10px;
-}
-
-.footer__content {
-  grid-area: footer;
-}
-
-.footer__content--links a {
-  color: #f1f1f1;
-  text-decoration: none;
-  margin: 10px 10px;
-  font-size: 12px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  list-style: none;
-}
-
-#wrapperIndex {
-  display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-  grid-template-rows: auto;
-  grid-template-columns: 1fr;
-  width: 100%;
-  background-color: #121212;
-}
-
-/* pagina de servicios destacados */
-.wrapperServices {
-  display: grid;
-  grid-template-areas: "header header header" "main main main" "aside aside aside" "footer footer footer";
-  grid-template-rows: auto;
-  grid-template-columns: 1fr;
-  width: 100%;
-  background-color: #121212;
-}
-
-/* pagina de proyectos realizados */
-.wrapperProjects {
-  display: grid;
-  grid-template-areas: "header header header" "main main main" "aside aside aside" "footer footer footer";
-  grid-template-rows: auto;
-  grid-template-columns: 1fr;
-  width: 100%;
-  background-color: #121212;
-}
-
-/* seccion superior de la pagina conocenos */
-.wrapperProjectsConocenos {
-  display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-  grid-template-rows: auto;
-  grid-template-columns: 1fr;
-  width: 100%;
-  background-color: #121212;
-}
-
-/* Diseño de pagina de contacto */
-.wrapperProjectsContact {
-  display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
+  font-size: 1em;
+  padding-top: 60px;
 }
 
 @media (min-width: 1024px) {

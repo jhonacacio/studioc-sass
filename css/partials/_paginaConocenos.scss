@@ -1,0 +1,47 @@
+// pagina conocenos
+.mainConocenos {
+    grid-area: main;
+}
+
+.equipoSuperior {
+    margin: 40px 40px;
+    color: $fontColor;
+    padding-top: 50px;
+    h1{
+        font-family: 'Staatliches', cursive;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    div {
+        width: 100%;
+    }
+    img {
+        border-radius: 20px;
+    }
+}
+.equipoInferior{
+    margin: auto;
+    width: 80%;
+    img {
+        border-radius: 20px;
+    }
+}
+.equipoSuperior__imagen{
+    width: 100%;
+    margin: 40px 0;
+}
+
+.equipoInferior__personas{
+    text-align: center;
+    width: 100%;
+    margin: 20px 0px;
+    color: $fontColor;
+    h2 {
+        font-family: 'Staatliches', cursive;
+        margin: 10px 0;
+        font-size: 2vh;
+    }
+    p{
+        font-size: $primaryFontSize;
+    }
+}
