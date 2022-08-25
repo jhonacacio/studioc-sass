@@ -19,6 +19,15 @@
     width: 100%;
     background-color: $primaryColor;
 }
+.headerIndex {
+    grid-area: header;
+}
+.mainPage {
+    grid-area: main;
+}
+.footer__content {
+    grid-area: footer;
+}
 /* pagina de servicios destacados */
 .wrapperServices {
     display: grid;
@@ -30,6 +39,21 @@
     grid-template-columns: 1fr;
     width: 100%;
     background-color: $primaryColor;
+}
+.services__container {
+    grid-area: main;
+}
+.servicesAside {
+    grid-area: aside;
+}
+.headerIndex {
+    grid-area: header;
+}
+.mainPage {
+    grid-area: main;
+}
+.footer__content {
+    grid-area: footer;
 }
 
 /* pagina de proyectos realizados */
@@ -44,6 +68,18 @@
     width: 100%;
     background-color: $primaryColor;
 }
+.projects__header {
+    grid-area: header;
+}
+.projects__container {
+    grid-area: main;
+}
+.projectsAside {
+    grid-area: aside;
+}
+.footer__content {
+    grid-area: footer;
+}
 /* seccion superior de la pagina conocenos */
 .wrapperProjectsConocenos {
     display: grid;
@@ -55,6 +91,9 @@
     width: 100%;
     background-color: $primaryColor;   
 }
+.mainConocenos {
+    grid-area: main;
+}
 /* Diseño de pagina de contacto */
 .wrapperProjectsContact {
     display: grid;
@@ -64,4 +103,8 @@
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
+}
+.contactContainer{
+    grid-area: main;
+    display: flex;
 }

@@ -6,18 +6,6 @@
         margin: 20px 110px;
         }
 }
-.projects__header {
-    grid-area: header;
-}
-.projects__container {
-    grid-area: main;
-}
-.projectsAside {
-    grid-area: aside;
-}
-.footer__content {
-    grid-area: footer;
-}
 .projects__div{
     display: flex;
     justify-content: center;

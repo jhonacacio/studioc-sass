@@ -1,20 +1,8 @@
 @charset "UTF-8";
+/* logo y navegacion */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
-.headerIndex {
-  grid-area: header;
-}
-
-.mainPage {
-  grid-area: main;
-}
-
-.footer__content {
-  grid-area: footer;
-}
-
-/* logo y navegacion */
 .nav {
   width: 100%;
   background-color: #121212;
@@ -210,6 +198,18 @@
   background-color: #121212;
 }
 
+.headerIndex {
+  grid-area: header;
+}
+
+.mainPage {
+  grid-area: main;
+}
+
+.footer__content {
+  grid-area: footer;
+}
+
 /* pagina de servicios destacados */
 .wrapperServices {
   display: grid;
@@ -218,6 +218,26 @@
   grid-template-columns: 1fr;
   width: 100%;
   background-color: #121212;
+}
+
+.services__container {
+  grid-area: main;
+}
+
+.servicesAside {
+  grid-area: aside;
+}
+
+.headerIndex {
+  grid-area: header;
+}
+
+.mainPage {
+  grid-area: main;
+}
+
+.footer__content {
+  grid-area: footer;
 }
 
 /* pagina de proyectos realizados */
@@ -230,6 +250,22 @@
   background-color: #121212;
 }
 
+.projects__header {
+  grid-area: header;
+}
+
+.projects__container {
+  grid-area: main;
+}
+
+.projectsAside {
+  grid-area: aside;
+}
+
+.footer__content {
+  grid-area: footer;
+}
+
 /* seccion superior de la pagina conocenos */
 .wrapperProjectsConocenos {
   display: grid;
@@ -240,6 +276,10 @@
   background-color: #121212;
 }
 
+.mainConocenos {
+  grid-area: main;
+}
+
 /* Diseño de pagina de contacto */
 .wrapperProjectsContact {
   display: grid;
@@ -247,6 +287,11 @@
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
+}
+
+.contactContainer {
+  grid-area: main;
+  display: flex;
 }
 
 /* banner principal  */
@@ -307,14 +352,6 @@
   width: 100px;
   margin: 10px;
   transition: 500ms;
-}
-
-.services__container {
-  grid-area: main;
-}
-
-.servicesAside {
-  grid-area: aside;
 }
 
 .servicesAside__title {
@@ -431,22 +468,6 @@
   margin: 20px 110px;
 }
 
-.projects__header {
-  grid-area: header;
-}
-
-.projects__container {
-  grid-area: main;
-}
-
-.projectsAside {
-  grid-area: aside;
-}
-
-.footer__content {
-  grid-area: footer;
-}
-
 .projects__div {
   display: flex;
   justify-content: center;
@@ -495,10 +516,6 @@
   margin: auto;
 }
 
-.mainConocenos {
-  grid-area: main;
-}
-
 .equipoSuperior {
   margin: 40px 40px;
   color: #f1f1f1;
@@ -542,11 +559,6 @@
 }
 .equipoInferior__personas p {
   font-size: 1em;
-}
-
-.contactContainer {
-  grid-area: main;
-  display: flex;
 }
 
 .contactContainer__left {
