@@ -391,6 +391,7 @@
 }
 .services article h3, .services h1 {
   margin: 20px 110px;
+  text-align: center;
 }
 .services article {
   margin: 20px 0;
@@ -466,6 +467,7 @@
 }
 .projects h1 {
   margin: 20px 110px;
+  text-align: center;
 }
 
 .projects__div {
@@ -711,6 +713,7 @@
   }
   .services h1 {
     margin-top: 110px;
+    text-align: left;
   }
   .featuredServices__images {
     width: 10%;
